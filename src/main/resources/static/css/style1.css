@@ -238,26 +238,18 @@ h1 {    /*  буквы */
     position: relative;
 }
 
-h1::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 90vmin; /*  here -26 */
-    left:90vmin;/*  here 29 */
-    width: 5vmin; /*  here 62 */
-    height:5vmin;/*  here 62 */
-    border-radius: 50%;  /*  here 50 */
-    border: 1.3vmin solid currentColor;
-    box-sizing: border-box;
 
-
-
-}
 
 em {    /*  БУКВЫ заливка планеты */
     font-family: 'Josefin Sans', sans-serif;
-    color: currentColor;
+    background-image:linear-gradient(to bottom,#9fc 0%,#9cf 25%,#f9c 50%,#fc9 75%,#9fc 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: 0 0;
+    border-radius: 30px;
+    animation: background 8s infinite alternate;
+
+   /* color: currentColor; */
     font-size: 5vmin;  /*  Высота и заливка букв 15 */
     position: relative;
     font-style: normal;

@@ -33,7 +33,7 @@ public class EmailService {
         message.setText(user.getMessage());
         javaMailSender.send(message);
 
-        System.out.println("Message ready");
+        System.out.println("Message commit");
 
     }
 }

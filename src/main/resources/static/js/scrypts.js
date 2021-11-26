@@ -1,6 +1,3 @@
-// Math.floor(Math.random()*3)
-
-
 var arr, arr_events = [], win_block, winner, again, winning, game;
 
 var comp_sym = "o";
